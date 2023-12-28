@@ -1,0 +1,125 @@
+@import 'bootstrap';
+@import 'navbar.css';
+@import 'footer.css';
+@import 'auth.css';
+@import 'bootstrap-icons';
+@import 'home.css';
+@import 'card.css';
+@import 'revisor.css';
+@import 'categoryShow.css';
+@import 'darkmode.css';
+@import 'show.css';
+
+:root{
+    --main: #f0edc8;
+    --sec: #F7F7F7;
+    --txt: #333;
+    --bg: #616161;
+    --acc: #ffa268;
+    --accbtn: #eb762d;
+    --acc2: #ff6200;
+    --acc3: #3b5c07;
+    --link: #C9F4F5;
+    --bg2: #EDDCD9;
+    --bg3: #f0fcdc;
+    --ffh: 'Playpen Sans', cursive;
+    --ffs: 'Kaushan Script', cursive;
+    --ffp: 'Patrick Hand', cursive;
+    --ffb:  'Montserrat', sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#000000af,var(--bg3) 10%,var(--bg3),var(--bg3))
+  }
+
+.myhead{
+    height: 100vh;
+    background:
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.250),rgba(0, 0, 0, 0.250)),
+    url(/public/media/myhead.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.myhead-show{
+    height: 100vh;
+    background:
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.250),rgba(0, 0, 0, 0.568)),
+    url(/public/media/myhead-show.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.myhead-annunci{
+    height: 100vh;
+    background:
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.250),rgba(0, 0, 0, 0.250)),
+    url(/public/media/myhead-annunci.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.myhead-crea{
+    height: 100vh;
+    background:
+    linear-gradient(to bottom,rgba(0, 0, 0, 0.250),rgba(0, 0, 0, 0.250)),
+    url(/public/media/myHead-crea.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.div-pagination{
+    background-color: var(--bg3);
+    height: 10vh;
+}
+
+
+.pagination{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.background{
+    background-color: var(--bg3);
+}
+
+
+/* img per il form,aggiusate */
+.img-preview{
+    height: 150px;
+    width: 150px;
+}
+.page-link{
+    background: transparent;
+    color: var(--txt);
+    border: none;
+    border-bottom: var(--bg) solid 2px;
+}
+
+.page-link.active, .active > .page-link{
+    background-color: transparent;
+    color: var(--bg);
+    border-bottom: var(--acc) solid 2px;
+}
+
+.pagination{
+    --bs-pagination-font-size: 20px;
+   --bs-pagination-disabled-bg: transparent;
+   --bs-pagination-disabled-color: var(--txt);
+   --bs-pagination-hover-bg: var(--acc);
+   --bs-pagination-hover-color: var(--sec);
+   --bs-pagination-hover-border-color:var(--accbtn);
+   --bs-pagination-focus-bg: var(--acc);
+   --bs-pagination-focus-box-shadow: var(--accbtn);
+   --bs-pagination-focus-color: var(--sec);
+   --bs-pagination-disabled-border-color: var(--bg);
+   --bs-pagination-border-radius:0px;
+}

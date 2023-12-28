@@ -1,0 +1,178 @@
+.card-custom {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+
+
+  .card-custom-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .card-custom:hover .card-custom-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front, .card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+
+
+  .card-back {
+    background: linear-gradient(120deg, var(--cardback1) 30%, var(--cardback2) 88%,
+    var(--main) 40%, var(--cardback3) 78%);
+    transform: rotateY(180deg);
+  }
+  .card-img{
+    border: 2px solid var(--borderCard);
+    border-radius: 1rem;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+
+  }
+  .card-gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 60%, transparent 88%,
+      transparent 40%, var(--acc2) 48%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+  }
+
+
+  .card-front .price, .card-back .price {
+    --price:'free';
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-front .price::before{
+    content: var(--price);
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, var(--spanfront1) 0%, var(--spanfront2)  51%, var(--spanfront1)  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sec1);
+    font-size: 12px;
+    font-family: var(--ffb);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+
+  .card-back .price::before{
+    content: 'Presto.it';
+    font-size: 10px;
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, var(--spanfront1) 0%, var(--spanfront2)  51%, var(--spanfront1)  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sec1);
+    font-family: var(--ffs);
+    font-weight: 600;
+    letter-spacing: 3px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+
+  .card-front .price::after, .card-back .price::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+  }
+  
+  .card-title{
+    font-size: 20px;
+    font-family: var(--ffb);
+    font-weight: bold;
+  }
+  .card-text{
+    letter-spacing: 1px;
+    color: black;
+    font-size: 15px;
+    font-family: var(--ffs);
+
+  }
+  .card-footer{
+    
+    color: black;
+  }
+
+  .btn-card{
+    background: var(--accbtn);
+    box-shadow: var(--bg) 3px 4px ;
+    transition: 0.1s;
+    text-decoration: none;
+  }
+
+  .btn-card:hover{
+    transform: translate(-2px -2px);
+    box-shadow: var(--bg) 4px 5px;
+    background: var(--accbtn);
+    color: black;
+  }
+
+  .btn-card:active{
+    transform: translate(2px ,2px);
+    background: var(--accbtn) !important;
+    color: var(--txt)!important;
+    box-shadow: var(--bg) 2px 2px;
+    border: none;
+  }
+  .mb-card{
+    display: none;
+  }
+  .card-img-mb{
+    border: 2px solid var(--borderCard);
+    border-radius: 1rem;
+     width: 100%;
+     height: 100%;
+  }
+ 
+  @media screen and (max-width: 670px){
+    .pc-card{
+      display: none;
+    }
+    .mb-card{
+      display: block;
+    }
+    
+  }

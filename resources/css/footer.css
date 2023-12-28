@@ -1,0 +1,42 @@
+.footer-text > a{
+    color: var(--bg);
+    font-family: var(--ffb);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer-text1{
+    color: var(--bg);
+    font-family: var(--ffs);
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .footer-bord{
+    border:solid 2px var(--bg);
+    border-radius: 20%;
+
+  }
+  .footer-title{
+    color:  var(--bg);
+    font-weight: 600;
+  }
+  .footer-body{
+    border-bottom:solid 2px var(--bg) ;
+  }
+  .footer-bg{
+    background-color: var(--bg3)!important;
+  }
+
+  @media screen and (max-width:670px) {
+    .footer-text > a{
+      color: var(--bg);
+      font-family: var(--ffb);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0!important;
+    }
+    .nav-item{
+      padding: 5px!important;
+    }
+  }

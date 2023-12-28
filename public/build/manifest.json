@@ -1,0 +1,36 @@
+{
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-d0346eea.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-5b2dd4d4.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "public/media/myHead-crea.jpg": {
+    "file": "assets/myHead-crea-624596d5.jpg",
+    "src": "public/media/myHead-crea.jpg"
+  },
+  "public/media/myhead-annunci.jpg": {
+    "file": "assets/myhead-annunci-5c455d5c.jpg",
+    "src": "public/media/myhead-annunci.jpg"
+  },
+  "public/media/myhead-show.jpg": {
+    "file": "assets/myhead-show-c78fc6ce.jpg",
+    "src": "public/media/myhead-show.jpg"
+  },
+  "public/media/myhead.jpg": {
+    "file": "assets/myhead-0c3614b5.jpg",
+    "src": "public/media/myhead.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-94e2f621.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-af238b78.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
